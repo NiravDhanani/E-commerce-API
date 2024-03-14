@@ -4,9 +4,16 @@ const ProductModel = require("../../models/admin/productmodel");
 const fs = require("fs");
 
 const FirstPage = async(req, res) =>{
-  res.status(200).json({
-    message:'Welcome to my API World I am Raj Koladiya!'
-  })
+  let Category = await CategoryModel.find({});
+  return res.status(200).send({
+    success: true,
+    message: 'Welcome to my API World I am Raj Koladiya this work with AWS!',
+    Category,
+  });
+  // res.status(200).json({
+  //   message:'Welcome to my API World I am Raj Koladiya this work with AWS!'
+
+  // })
 }
 
 //CATEGORY
