@@ -1,8 +1,9 @@
     const mongoose = require('mongoose');
-    
-    
+
     // mongoose.connect("mongodb://localhost:27017/FastKartAPI");
     // mongoose.connect(`mongodb+srv://Raj:uq5rMhO1FfkLkOU3@cluster0.fvudrsz.mongodb.net/API`);
+    mongoose.connect(`mongodb+srv://decoraevnt:decoraevnt@decora.s2aup1m.mongodb.net/NodeApi`);
+   
 
 
     const db = mongoose.connection;
